@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Sleep - Lifestyle Health</title>
+        <link rel="stylesheet" href="/static/Style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Log Your Sleep</h1>
+        <nav>
+            <a href="/dashboard">Dashboard</a> |
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>sleephours</th>
+                    <th>optimalsleephours</th>
+                    <th>sleepquality</th>
+                    <th>sleeptime</th>
+                    <th>waketime</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in sleephabit %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>{{ row[4] }}</td>                   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+        <form action="/sleep" method="POST">
+            <label for="sleep_duration">Sleep Duration (hours):</label>
+            <input type="number" id="sleep_duration" name="sleep_duration" required><br><br>
+            <button type="submit">Save Sleep</button>
+        </form>
+    </main>
+</body>
+</html>

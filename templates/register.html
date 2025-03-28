@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Lifestyle Health</title>
+    <link rel="stylesheet" href="/static/Style.css">
+</head>
+<body>
+    <header>
+        <h1>Sign up</h1>
+    </header>
+    <main>
+        <form action="/register" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+<label for="username">Email:</label>
+            <input type="text" id="email" name="email" required><br><br>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="/login">Login</a></p>
+    </main>
+</body>
+</html>

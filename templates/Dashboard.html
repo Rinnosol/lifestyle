@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Lifestyle Health</title>
+        <link rel="stylesheet" href="/static/Style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Welcome {{username}} - Your Dashboard</h1>
+        <nav>
+            <a href="/workout">Workout</a> |           
+            <a href="/sleep">Sleep</a> |
+            <a href="/nutrition">Meal & Nutrition</a> |
+            <a href="/goal">Set Goal</a> |
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Recent Activity</h2>
+            <ul>
+                <li>Last Workout: {{last_workout}}</li>
+                <li>Last Meal: {{last_meal}}</li>
+                <li>Last Sleep: {{last_sleep}}</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
