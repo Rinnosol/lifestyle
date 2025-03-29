@@ -10,7 +10,11 @@ pip - curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py   and after that r
 
 2. Ensure system env path are set properly for all the above installed software.
 
-3. Check for installed versions in cmd:
+   C:\Program Files\MySQL\MySQL Server 8.0
+   C:\Users\<yourusername>\AppData\Local\Programs\Python\Python313\Scripts
+   C:\Users\<yourusername>\AppData\Local\Programs\Python\Python313
+
+4. Check for installed versions in cmd:
 
 mysql --version
 python --version
